@@ -1,0 +1,49 @@
+<!--Estructura HTML (25 puntos)
+• Crear un archivo index. html con la estructura básica de HTML. (5 puntos)
+• Incluir una etiqueta <header> con un título para la aplicación (por ejemplo, "To-Do
+List"). (5 puntos)
+• Crear una sección ‹main> que contenga:
+• Un campo de entrada < input> para agregar nuevas tareas. (5 puntos)
+• Un botón < button> para añadir la tarea a la lista. (5 puntos)
+• Una lista ‹ul> para mostrar las tareas. (5 puntos)
+        -->
+       
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+            <title>To do List</title>
+
+            <!-- ink para llamar los estilos -->
+             <link rel="stylesheet" href="./style.css">
+
+        </head>
+        <body>
+            <h1>TO DO List</h1>
+
+            <main>
+                <!-- Espacio para agregar la tarea -->
+                <input id="taskInput" 
+                placeholder="Write Task"/>
+
+                <!-- Boton para agregar tarea -->
+                <button id="addTaskBtn" 
+                onclick="addTask()"
+                >Add</button>
+                
+                <ul id="taskList">
+                    <!-- se agregan las tareas -->
+                </ul>
+
+    
+            </main>
+
+            <script src="./script.js"></script>
+
+        </body>
+        </html>
